@@ -1,0 +1,48 @@
+article, html, .off-canvas-wrap, .off-canvas-wrap .inner-wrap{ width: 100%; height:100%; }
+
+/* Header and Sticky Footer */
+header.header.nav-up { top: -45px; }
+.main-content{ margin-top:45px; overflow-y: auto; }
+@media #{$small-only} { body{ height: 100%; } .main-content{padding-bottom: 45px;} }
+@media #{$medium-up} { body{ height: auto; } }
+.site__footer{	padding:13px 0;	background: #eee;line-height: 1.1em;}
+header.header{
+	position: fixed;
+	top:0;
+	transition: top 0.2s ease-in-out;
+	width: 100%;
+	z-index: 2;
+}
+
+/* General rules */
+.margin--top{margin-top: 1em;}
+.margin--bottom{margin-bottom: 1em;}
+
+
+.alert__row{
+	.alert-box{margin-bottom:-45px;z-index: 1;}
+}
+.text--small{ font-size:0.8em !important; }
+.facebook__button--small{ height: 40px; }
+
+.object--centered{margin:0 auto;display: block;}
+.block--centered{display: block; text-align: center;}
+
+.loginbox{ background:#eee; padding:20px; margin: 45px 0 20px 0;}
+
+
+.element--inline{display: inline-block; }
+.photo--thumbnail{ height:40px;margin:2px;}
+.top-bar .toggle-topbar{margin-top: 5px;}
+
+/* Lists */
+.list--nomargin{margin:0;}
+.list--none{list-style: none;}
+.list--inline{ 
+	list-style: none;
+	li{ float:left; padding:0 10px; }
+}
+
+/* Decorations */
+.line__separator{ border-top: solid 2px #aaa; margin:10px 0; padding:10px 0; }
+.line--small{ width: 60px;}
