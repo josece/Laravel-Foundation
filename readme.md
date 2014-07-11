@@ -1,4 +1,4 @@
-## Users/Facebook - Foundation - Laravel Starter
+## Laravel/Foundation Auth Starter - V1.0
 
 This project is a boilerplate that includes a User module.
 Users can't create their own accounts, edit their details or login with Facebook credentials.
@@ -11,7 +11,6 @@ Some of the features included are:
 - Edit profiles (user picture upload)
 - User roles
 - Swipe menu for mobile
-- Toggle (show/hide) navigation bar when scrolling down
 
 Based on Laravel and Foundation by Zurb.
 Author: Jose Calleja.
