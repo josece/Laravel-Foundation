@@ -15,7 +15,7 @@ Some of the features included are:
 Based on Laravel and Foundation by Zurb.
 Author: Jose Calleja.
 
-
+Screenshots: https://github.com/josece/Laravel-Foundation/blob/master/public/screenshot.jpg
 
 ### License
 
