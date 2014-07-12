@@ -1,7 +1,7 @@
 ## Laravel/Foundation Auth Starter - V1.0
 
-This project is a boilerplate that includes a User module.
-Users can't create their own accounts, edit their details or login with Facebook credentials.
+This project is a boilerplate that includes a User authentication module.
+Users can create their own accounts, edit their details or login with Facebook credentials.
 Some of the features included are:
 - Fully responsive (Foundation by Zurb)
 - Facebook auth
@@ -11,6 +11,7 @@ Some of the features included are:
 - Edit profiles (user picture upload)
 - User roles
 - Swipe menu for mobile
+- Spanish translation
 
 Based on Laravel and Foundation by Zurb.
 Author: Jose Calleja.
