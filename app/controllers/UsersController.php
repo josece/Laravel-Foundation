@@ -5,6 +5,24 @@
  * sesiones de facebook basado en:
  * https://github.com/msurguy/laravel-facebook-login
  *
+
+getIndex
+getRegister
+getVerify($code)
+getLogin
+getFacebookauth
+getFacebookcallback
+getEdit
+getHome
+getLogout
+
+postEdit
+postSignin
+postCreate
+
+getEditadmin
+destroy
+
  */
 
 class UsersController extends \BaseController {
@@ -96,8 +114,9 @@ class UsersController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function postEdit($id = null) {
-		$id = is_null($id) ? Auth::user()->id :$id;
+	public function postEdit() {
+		//$id = is_null($id) ? Auth::user()->id :$id;
+		$id = Auth::user()->id;
 		$input = Input::all();
 		
 		$validation = Validator::make($input, array(
@@ -322,11 +341,11 @@ class UsersController extends \BaseController {
 			return Redirect::to('user/');
 		}
 
-		/**
+		/*
 		 * Show the form for creating a new resource.
 		 *
 		 * @return Response
-		 */
+		 *
 		public function create()
 		{
 			//
@@ -334,11 +353,11 @@ class UsersController extends \BaseController {
 		}
 
 
-		/**
+		/*
 		 * Store a newly created resource in storage.
 		 *
 		 * @return Response
-		 */
+		 *
 		public function store()
 		{
 			//
@@ -364,13 +383,13 @@ class UsersController extends \BaseController {
 		 *
 		 * @param  int  $id
 		 * @return Response
-		 */
+		 *
 		public function getShow($id)
 		{
 			//
 		
 		
-		}
+		}*/
 
 		/**
 		 * Remove the specified resource from storage.

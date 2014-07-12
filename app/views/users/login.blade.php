@@ -9,7 +9,7 @@
 		<small class="error">{{Lang::get('form.error--email_or_username')}}</small>
 	</div>
 	<div class="password-field">
-		{{ Form::password('password', array('class'=>'', 'placeholder'=>'Password', 'required' =>'required', 'id'=>'password', 'pattern' => '(?=.*\d)(?=.*[a-zA-Z]).{4,8}$')) }}
+		{{ Form::password('password', array('class'=>'', 'placeholder'=>'Password', 'required' =>'required', 'id'=>'password')) }}
 		<small class="error">{{Lang::get('form.error--password')}}</small>
 	</div>
 	<div class="persistent-field">

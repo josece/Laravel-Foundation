@@ -20,7 +20,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 			'lastname'=>'alpha|min:2',
 			'email'=>'required|email|unique:users',
 			'username'=>'required|alpha_dash|unique:users',
-			'password'=>'required|alpha_num|between:6,12|confirmed',
+			'password'=>'required|alpha_num|between:5,12|confirmed',
 			'password_confirmation'=>'required|alpha_num|between:6,12'
 		);
 	
@@ -104,8 +104,16 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		$role_id = $this->role_id;
 		return $roles[$role_id];
 	}
+	public function confirm(){
+		$this->confirmed = 1;
+		$this->save();
+	}
 	public function isConfirmed(){
 		return $this->confirmed;
+	}
+	public function attachRole($role){
+		$this->role_id == array_search($rolename, $this->getRoles());
+		$this->save();
 	}
 	
 
